@@ -33,6 +33,9 @@ May 30
 	- Will have to review the altium link Ava Sent me.
 	- Will have to view some other implementations of the BLDC Controller and use it as our building blocks.
 	- Watch the youtube videos
+	- Upload Project Spec file to the README
+	- Fixing my github fork
+
 
 
 
