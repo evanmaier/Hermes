@@ -1,0 +1,41 @@
+May 21
+- 3 Hours 
+	- Learning FOC And BLDC Principles from MATLAB videos
+	- Locating existing solutions
+	- Learning about Clarke and Park Transformations
+
+May 24
+- 4 Hours 
+	- Learning the MATLAB Simulink Interface
+	- MATLAB Tutorial
+	- Designing Block Diagram for project
+	- Setup Version Control for Simulations
+May 25
+- 8 Hours
+	- Getting started with Motor Control Blocks Toolkit
+
+May 28
+- 3 hours
+	- Built model
+
+May 29
+- 8 hours
+	- Research features and current implementations
+	- Made a document outlining project requirements and purposes
+	- Started Hardware project
+	- Reviewed Other custom ESCs such as VESC and Mark-Belkin
+	- making notes on back-emf measurement methods
+	- met with Ava, she is finishing up the inverter circuit and is looking into implementations for fridays meeting
+
+May 30
+	- Upload project to Github
+	- Will have to schedule a time to work with Evan on the simulink stuff.
+	- Will have to review the altium link Ava Sent me.
+	- Will have to view some other implementations of the BLDC Controller and use it as our building blocks.
+	- Watch the youtube videos
+
+
+
+
+	
+
