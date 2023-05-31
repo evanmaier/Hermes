@@ -4,7 +4,12 @@
 *.autosave
 *.slx.r*
 *.mdl.r*
-./resource/project
+
+
+project/
+__Previews/
+History/
+
 
 # Derived content-obscured files
 *.p
