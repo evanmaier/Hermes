@@ -1,7 +1,0 @@
-Record=TopLevelDocument|FileName=Buzzer.SchDoc|SheetNumber=6
-Record=NoMainPathDocument|SourceDocument=Buzzer.SchDoc|FileName=Connections.SchDoc|SheetNumber=2
-Record=NoMainPathDocument|SourceDocument=Buzzer.SchDoc|FileName=Hermes.SchDoc|SheetNumber=1
-Record=NoMainPathDocument|SourceDocument=Buzzer.SchDoc|FileName=Internal power.SchDoc|SheetNumber=3
-Record=NoMainPathDocument|SourceDocument=Buzzer.SchDoc|FileName=Inverter.SchDoc|SheetNumber=4
-Record=NoMainPathDocument|SourceDocument=Buzzer.SchDoc|FileName=Motor Driver.SchDoc|SheetNumber=5
-Record=NoMainPathDocument|SourceDocument=Buzzer.SchDoc|FileName=PI Controller.SchDoc|SheetNumber=7

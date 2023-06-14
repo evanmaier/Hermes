@@ -28,14 +28,34 @@ May 29
 	- met with Ava, she is finishing up the inverter circuit and is looking into implementations for fridays meeting
 
 May 30
-	- Upload project to Github
-	- Will have to schedule a time to work with Evan on the simulink stuff.
-	- Will have to review the altium link Ava Sent me.
-	- Will have to view some other implementations of the BLDC Controller and use it as our building blocks.
-	- Watch the youtube videos
-	- Upload Project Spec file to the README
 	- Fixing my github fork
+	- Upload project to Github
+	- Continue notes on back-emf techniques and other sensorless methods for BLDCs and PMSM.
+May 31 - June 5
+	- Located dozens of reports
+	- Organized a notes document of everything
+	- Update the Project Spec File to the README
+Jun 6
+	- Reading reports on how to implement a proper feedback system to obtain the rotor position.
+	- Built Block Diagram of the layout
+	- BOM selection
+	- Made notes on different Back-emf techniques for the report.
+	- Reviewed Avas altium link and made notes.
+	- Made notes on methods to drive the inverter circuit and considerations
+June 7
+	- Making notes from research reports for midterm report
+	- Fixing the issue with the Linearization on MATLAB
+	- Finding a SVPWM library for STM boards.
 
+- Implement Braking and slow-shutdown feature
+- Find a current sense Opamp and simulate if it would work on spice
+
+June 8
+	- Met with illam to solve linearization problem; he refered us to his student who did something similar
+	- Built a circuit for the start-stop feature and got the waveforms.
+		- Next step is to build the latching circuit for more robust switch.
+June 9
+	
 
 
 
