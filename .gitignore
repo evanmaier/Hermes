@@ -5,6 +5,12 @@
 *.slx.r*
 *.mdl.r*
 
+
+project/
+__Previews/
+History/
+
+
 # Derived content-obscured files
 *.p
 
