@@ -1,59 +1,115 @@
-/*
- * SVPWM.h
- *
- *  Created on: Jun. 9, 2023
- *      Author: amann
- */
+/**
+  ***********************************************************************************
+  * @file    svpwm.h
+  * @author  Serhii Yatsenko [royalroad1995@gmail.com]
+  * @version V1.0
+  * @date    May-2020
+  * @brief   This file contains the type definition of data structure and function
+  *	     prototypes for implementation the SVPWM - Space-Vector Pulse Width
+  *	     Modulation
+  ***********************************************************************************
+  * @license
+  *
+  * MIT License
+  *
+  * Permission is hereby granted, free of charge, to any person obtaining a copy
+  * of this software and associated documentation files (the "Software"), to deal
+  * in the Software without restriction, including without limitation the rights
+  * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  * copies of the Software, and to permit persons to whom the Software is
+  * furnished to do so, subject to the following conditions:
+  *
+  * The above copyright notice and this permission notice shall be included in all
+  * copies or substantial portions of the Software.
+  *
+  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  * SOFTWARE.
+  *
+  ***********************************************************************************
+  */
 
-#ifndef INC_SVPWM_H_
-#define INC_SVPWM_H_
+/* Define to prevent recursive inclusion ------------------------------------------*/
+#ifndef __SVPWM_H__
+#define __SVPWM_H__
 
-#include "main.h"
-#include "stm32f4xx_hal.h"
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-#define PI 3.1416
+/* Includes -----------------------------------------------------------------------*/
+#include <stdint.h>
+#include <math.h>
 
-//extern TIM_HandleTypeDef htim1;
+/* Exported types -----------------------------------------------------------------*/
 
-typedef struct
+/**
+  * @brief SVPWM module data input type
+  */
+typedef enum
 {
-	uint32_t b_TIM1PrdCnt;
-	// b_VrefA = b_Vm * cos(2*pi*b_freq*t)
-	// b_VrefB = b_Vm * cos(2*pi*b_freq*t - 2*pi/3)
-	// b_VrefC = b_Vm * cos(2*pi*b_freq*t + 2*pi/3)
-	float b_VrefA, b_VrefB, b_VrefC;
-	float b_Vm, b_freq;
-	float b_VrefAlpha, b_VrefBeta;
+	AlBe	= 0x00U,		// Alpha-Beta component input
+	UsAng	= 0x01U			// Magnitude-Angle component input
+} tInType;
 
-	uint8_t b_sector;
-	float b_VrefAngle;
+/**
+  * @brief "SVPWM Module" data structure
+  */
+typedef struct sSVPWM
+{
+// Inputs:
+	tInType	enInType;		// SVPWM module data input type
+	float	fUdc;			// DC Link voltage, Volts
+	float	fUdcCCRval;		// Counter compare register value which is
+																		// equivalent to full DC Link voltage
+	// enInType == AlBe:
+	float	fUal;			// Alpha input, Volts
+	float	fUbe;			// Beta input, Volts
+	// enInType == UsAng:
+	float	fUs;			// Magnitude input, Volts (enInType == UsAng)
+	float	fAngRad;		// Angle input, Rad (enInType == UsAng)
+// Outputs:
+	float	fCCRA;			// Counter compare register A value
+	float	fCCRB;			// Counter compare register B value
+	float	fCCRC;			// Counter compare register C value
+// Functions:
+	void (*m_calc)(struct sSVPWM*);	// Pointer to SVPWM calculation function
+} tSVPWM;
 
-	//space vector
-	//0 : 000		1: 001	2: 010	3: 011	4: 100	5: 101	6: 110	7: 111
-	uint8_t a_VectorOut[3];
-	float a_VectorOutDuty[3];
-	uint32_t a_VectorOutDutyCmpr[4];
+/* Exported constants -------------------------------------------------------------*/
 
-} BLDC_SVPWMTypeDef;
+/**
+  * @brief Initialization constant with defaults for user variables
+  *	   with "tSVPWM" type
+  */
+#define SVPWM_DEFAULTS {		\
+	.enInType	= AlBe,		\
+	.fUal		= 0.0f,		\
+	.fUbe		= 0.0f,		\
+	.fUs		= 0.0f,		\
+	.fAngRad	= 0.0f,		\
+	.fUdc		= 0.0f,		\
+	.fUdcCCRval	= 0.0f,		\
+	.fCCRA		= 0.0f,		\
+	.fCCRB		= 0.0f,		\
+	.fCCRC		= 0.0f,		\
+	.m_calc		= tSVPWM_calc	\
+}
 
+/* Exported macro -----------------------------------------------------------------*/
+/* Exported functions -------------------------------------------------------------*/
 
-extern BLDC_SVPWMTypeDef svpwm1;
+/* SVPWM Duty Cycles calculation function prototype ********************************/
+void tSVPWM_calc(tSVPWM*);
 
+#ifdef __cplusplus
+}
+#endif
 
+#endif /* __SVPWM_H__ */
 
-
-void Clark_Transformation(float* In_a, 	float* In_b, float* In_c, float* Out_alpha, float* Out_beta);
-void InvClark_Transformation(float* In_alpha, 	float* In_beta, float* Out_a, float* Out_b, float* Out_c);
-void sectorJudge(BLDC_SVPWMTypeDef* svpwm);
-void SpaceVectorUpdate(BLDC_SVPWMTypeDef* svpwm);
-void TIM1CmprLoad(void);
-void SVPWM1_SpaceVectorDRV(uint8_t spaceVectorOut);
-void SVPWM1_SpaceVectorDRV_v2(uint8_t spaceVectorOut);
-//void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim);
-//void HAL_TIM_OC_DelayElapsedCallback(TIM_HandleTypeDef *htim);
-
-
-
-
-
-#endif /* INC_SVPWM_H_ */
+/*********************************** END OF FILE ***********************************/
