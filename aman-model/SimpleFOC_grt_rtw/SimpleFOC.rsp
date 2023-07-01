@@ -1,0 +1,7 @@
+rt_logging.obj
+SimpleFOC.obj
+SimpleFOC_data.obj
+rtGetInf.obj
+rtGetNaN.obj
+rt_nonfinite.obj
+rt_main.obj

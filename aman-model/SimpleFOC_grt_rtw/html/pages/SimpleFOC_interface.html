@@ -1,0 +1,2484 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="rtwreport.css" /><script language="JavaScript" type="text/javascript">function rtwTableShrink(o) {var t = o.nextSibling;if (t.nodeType != 1) {t = t.nextSibling;}if (t.style.display == "none") {t.style.display = "";o.innerHTML = "[-]"} else {t.style.display = "none";o.innerHTML = "[+] ... "}}</script><script>function postParentWindowMessage(message) {window.parent.postMessage(message, "*");}</script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>
+Code Interface Report for SimpleFOC
+</title>
+
+</head>
+<body>
+<h1>
+Code Interface Report for SimpleFOC
+</h1>
+<h3>
+Table of Contents
+</h3>
+<ul>
+<li>
+<a href="#sec_Entry-Point_Functions">
+Entry-Point Functions
+</a>
+
+</li>
+<li>
+<a href="#sec_Inports">
+Inports
+</a>
+
+</li>
+<li>
+<a href="#sec_Outports">
+Outports
+</a>
+
+</li>
+<li>
+<a href="#sec_Interface_Parameters">
+Interface Parameters
+</a>
+
+</li>
+<li>
+<a href="#sec_Data_Stores">
+Data Stores
+</a>
+
+</li>
+
+</ul>
+<h3>
+<a name="sec_Entry-Point_Functions">
+Entry-Point Functions
+</a>
+
+</h3>
+<p>
+Function: <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'SimpleFOC_initialize'})">SimpleFOC_initialize</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Prototype
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void SimpleFOC_initialize(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Description
+</td>
+<td width="75%" align="left" valign="top">
+Initialization entry point of generated code
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Timing
+</td>
+<td width="75%" align="left" valign="top">
+Must be called exactly once
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Arguments
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Return value
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Header file
+</td>
+<td width="75%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'SimpleFOC.h'})">SimpleFOC.h</a>
+</td>
+
+</tr>
+
+</table>
+<p>
+Function: <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'SimpleFOC_step'})">SimpleFOC_step</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Prototype
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void SimpleFOC_step(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Description
+</td>
+<td width="75%" align="left" valign="top">
+Output entry point of generated code
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Timing
+</td>
+<td width="75%" align="left" valign="top">
+Must be called periodically, every 2.5e-06 seconds
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Arguments
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Return value
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Header file
+</td>
+<td width="75%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'SimpleFOC.h'})">SimpleFOC.h</a>
+</td>
+
+</tr>
+
+</table>
+<p>
+Function: <a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'SimpleFOC_terminate'})">SimpleFOC_terminate</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Prototype
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void SimpleFOC_terminate(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Description
+</td>
+<td width="75%" align="left" valign="top">
+Termination entry point of generated code
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Timing
+</td>
+<td width="75%" align="left" valign="top">
+Must be called exactly once
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Arguments
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Return value
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Header file
+</td>
+<td width="75%" align="left" valign="top">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'jumpToCode',location:'SimpleFOC.h'})">SimpleFOC.h</a>
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Inports">
+Inports
+</a>
+
+</h3>
+<p>
+No Inports in model.
+</p>
+<h3>
+<a name="sec_Outports">
+Outports
+</a>
+
+</h3>
+<p>
+No Outports in model.
+</p>
+<h3>
+<a name="sec_Interface_Parameters">
+Interface Parameters
+</a>
+
+</h3>
+<span title="Click to shrink or expand table" onclick="rtwTableShrink(this)">[-]</span><table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+Parameter Source
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+Code Identifier
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+Data Type
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+Dimension
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+Initial
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Initial
+</td>
+<td width="21%" align="left" valign="top">
+struct_maxBupWeQJ2AuQC08ctECC
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+Ki_id
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Ki_id
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+Ki_iq
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Ki_iq
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+Kp_id
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Kp_id
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+Kp_iq
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Kp_iq
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;Root&gt;/BLDC
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.BLDC_B
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;Root&gt;/BLDC
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.BLDC_F
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S2&gt;/Discrete Quadrature-Current Controller
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.DiscreteQuadratureCurrentContro
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S2&gt;/Discrete Direct-Current Controller
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.DiscreteDirectCurrentController
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;Root&gt;/BLDC
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.BLDC_J
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;Root&gt;/BLDC
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.BLDC_Lambda
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;Root&gt;/BLDC
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.BLDC_Ld
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;Root&gt;/BLDC
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.BLDC_Lq
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;Root&gt;/BLDC
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.BLDC_MechInput
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;Root&gt;/BLDC
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.BLDC_Omega_init
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;Root&gt;/BLDC
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.BLDC_Rs
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S24&gt;/Compare To Constant
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.CompareToConstant_const
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S24&gt;/Compare To Constant1
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.CompareToConstant1_const
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S24&gt;/Compare To Constant2
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.CompareToConstant2_const
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S24&gt;/Compare To Constant3
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.CompareToConstant3_const
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S24&gt;/Compare To Constant6
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.CompareToConstant6_const
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S24&gt;/Compare To Constant7
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.CompareToConstant7_const
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S24&gt;/Compare To Constant8
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.CompareToConstant8_const
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S24&gt;/Compare To Constant9
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.CompareToConstant9_const
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S25&gt;/Compare To Constant
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.CompareToConstant_const_f
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S25&gt;/Compare To Constant1
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.CompareToConstant1_const_l
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S25&gt;/Compare To Constant2
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.CompareToConstant2_const_f
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S25&gt;/Compare To Constant3
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.CompareToConstant3_const_b
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S25&gt;/Compare To Constant6
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.CompareToConstant6_const_k
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S25&gt;/Compare To Constant7
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.CompareToConstant7_const_o
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S25&gt;/Compare To Constant8
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.CompareToConstant8_const_l
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S25&gt;/Compare To Constant9
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.CompareToConstant9_const_c
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S26&gt;/Compare To Constant
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.CompareToConstant_const_b
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S26&gt;/Compare To Constant1
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.CompareToConstant1_const_lf
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S26&gt;/Compare To Constant2
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.CompareToConstant2_const_c
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S26&gt;/Compare To Constant3
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.CompareToConstant3_const_k
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S26&gt;/Compare To Constant6
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.CompareToConstant6_const_f
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S26&gt;/Compare To Constant7
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.CompareToConstant7_const_b
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S26&gt;/Compare To Constant8
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.CompareToConstant8_const_b
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S26&gt;/Compare To Constant9
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.CompareToConstant9_const_g
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;Root&gt;/BLDC
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.BLDC_p
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S63&gt;/Compare To Constant
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.CompareToConstant_const_j
+</td>
+<td width="21%" align="left" valign="top">
+uint16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S63&gt;/Compare To Constant1
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.CompareToConstant1_const_a
+</td>
+<td width="21%" align="left" valign="top">
+uint16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S24&gt;/Gain1
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Gain1_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S24&gt;/Bias
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Bias_Bias
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S24&gt;/Gain2
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Gain2_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S24&gt;/Bias2
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Bias2_Bias
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S24&gt;/Gain
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Gain_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S24&gt;/Bias1
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Bias1_Bias
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S25&gt;/Gain1
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Gain1_Gain_l
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S25&gt;/Bias
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Bias_Bias_a
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S25&gt;/Gain2
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Gain2_Gain_b
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S25&gt;/Bias2
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Bias2_Bias_j
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S25&gt;/Gain
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Gain_Gain_c
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S25&gt;/Bias1
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Bias1_Bias_a
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S26&gt;/Gain1
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Gain1_Gain_f
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S26&gt;/Bias
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Bias_Bias_h
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S26&gt;/Gain2
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Gain2_Gain_p
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S26&gt;/Bias2
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Bias2_Bias_c
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S26&gt;/Gain
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Gain_Gain_o
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S26&gt;/Bias1
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Bias1_Bias_h
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S51&gt;/one_by_sqrt3
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.one_by_sqrt3_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S74&gt;/Constant
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S74&gt;/Gain
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Gain_Gain_p
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S74&gt;/Switch1
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Switch1_Threshold
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S74&gt;/Switch
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Switch_Threshold
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S72&gt;/Gain
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Gain_Gain_k
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S66&gt;/Constant
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant_Value_o
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S52&gt;/ReplaceInport_satLim
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.ReplaceInport_satLim_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S64&gt;/Constant3
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant3_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S173&gt;/Constant
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant_Value_m
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S182&gt;/Constant
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant_Value_h
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S7&gt;/Constant
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant_Value_k
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S5&gt;/Minus120
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Minus120_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[2  2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S5&gt;/Plus120
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Plus120_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[2  2]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S5&gt;/Gain2
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Gain2_Gain_n
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S5&gt;/Constant2
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant2_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S9&gt;/Constant
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant_Value_mp
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S24&gt;/Bias3
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Bias3_Bias
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S24&gt;/Constant7
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant7_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S24&gt;/Constant8
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant8_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S24&gt;/Constant1
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant1_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S24&gt;/Constant3
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant3_Value_l
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S24&gt;/Constant2
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant2_Value_i
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S24&gt;/Constant4
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant4_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S24&gt;/Constant5
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant5_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S24&gt;/Constant6
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant6_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S25&gt;/Bias3
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Bias3_Bias_g
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S25&gt;/Constant7
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant7_Value_n
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S25&gt;/Constant8
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant8_Value_h
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S25&gt;/Constant1
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant1_Value_d
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S25&gt;/Constant3
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant3_Value_l3
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S25&gt;/Constant2
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant2_Value_l
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S25&gt;/Constant4
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant4_Value_k
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S25&gt;/Constant5
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant5_Value_a
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S25&gt;/Constant6
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant6_Value_h
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S26&gt;/Bias3
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Bias3_Bias_f
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S26&gt;/Constant7
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant7_Value_k
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S26&gt;/Constant8
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant8_Value_g
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S26&gt;/Constant1
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant1_Value_j
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S26&gt;/Constant3
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant3_Value_o
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S26&gt;/Constant2
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant2_Value_c
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S26&gt;/Constant4
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant4_Value_l
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S26&gt;/Constant5
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant5_Value_ay
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S26&gt;/Constant6
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant6_Value_b
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S6&gt;/Gain
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Gain_Gain_pp
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S6&gt;/Constant2
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant2_Value_h
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S6&gt;/Minus120
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Minus120_Value_i
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[2  2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S6&gt;/Gain2
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Gain2_Gain_bt
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S6&gt;/Plus120
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Plus120_Value_j
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[2  2]
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S6&gt;/Gain3
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Gain3_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S6&gt;/Gain1
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Gain1_Gain_o
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;Root&gt;/Unit Delay
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.UnitDelay_1_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;Root&gt;/Unit Delay
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.UnitDelay_2_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S61&gt;/sine_table_values
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.sine_table_values_Value
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  1002]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;Root&gt;/Unit Delay
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.UnitDelay_9_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S181&gt;/convert_pu
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.convert_pu_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S61&gt;/indexing
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.indexing_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S55&gt;/one_by_two
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.one_by_two_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S55&gt;/sqrt3_by_two
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.sqrt3_by_two_Gain
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S177&gt;/one_by_two
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.one_by_two_Gain_o
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S176&gt;/Gain
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Gain_Gain_e
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S58&gt;/Gain1
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Gain1_Gain_e
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S58&gt;/Constant4
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant4_Value_lq
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S173&gt;/Switch
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Switch_Threshold_j
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;Root&gt;/Torque Setpoint
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.TorqueSetpoint_Time
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;Root&gt;/Torque Setpoint
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.TorqueSetpoint_YFinal
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S8&gt;/Trq_Or_Spd
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Trq_Or_Spd_Threshold
+</td>
+<td width="21%" align="left" valign="top">
+real_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S2&gt;/Constant1
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant1_Value_c
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S2&gt;/Constant
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Constant_Value_j
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S173&gt;/Saturation2
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Saturation2_UpperSat
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S173&gt;/Saturation2
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Saturation2_LowerSat
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S173&gt;/Gain
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Gain_Gain_i
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S188&gt;/Filter_Constant
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Filter_Constant_Value
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S188&gt;/One
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.One_Value
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S188&gt;/Unit Delay
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.UnitDelay_InitialCondition
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S61&gt;/offset
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.offset_Value
+</td>
+<td width="21%" align="left" valign="top">
+int16_T
+</td>
+<td width="10%" align="right" valign="top">
+[1  4]
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S52&gt;/ReplaceInport_satMethod
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.ReplaceInport_satMethod_Value
+</td>
+<td width="21%" align="left" valign="top">
+uint16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S64&gt;/ChosenMethod
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.ChosenMethod_Value
+</td>
+<td width="21%" align="left" valign="top">
+uint16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S172&gt;/Offset
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Offset_Value
+</td>
+<td width="21%" align="left" valign="top">
+uint16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S172&gt;/Switch
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Switch_Threshold_c
+</td>
+<td width="21%" align="left" valign="top">
+uint16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S179&gt;/Offset
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Offset_Value_h
+</td>
+<td width="21%" align="left" valign="top">
+uint16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S179&gt;/Switch
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.Switch_Threshold_b
+</td>
+<td width="21%" align="left" valign="top">
+uint16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+&lt;S64&gt;/enableInportSatMethod
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.enableInportSatMethod_Value
+</td>
+<td width="21%" align="left" valign="top">
+uint16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+&lt;S64&gt;/enableInportSatLim
+</td>
+<td width="26%" align="left" valign="top">
+SimpleFOC_P.enableInportSatLim_Value
+</td>
+<td width="21%" align="left" valign="top">
+uint16_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Data_Stores">
+Data Stores
+</a>
+
+</h3>
+<p>
+No data stores in the model; note that this report lists only data stores with non-auto storage class and global data stores
+</p>
+
+</body>
+
+</html>

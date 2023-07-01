@@ -1,0 +1,1 @@
+var modelInfo = {model:"SimpleFOC"};var modelHierarchy=[{model:"SimpleFOC",relativePath:"_internal.html",parent:"null"},];

@@ -1,0 +1,1 @@
+var reportPages = [["Summary","SimpleFOC_survey.html"],["Subsystem Report","SimpleFOC_subsystems.html"],["Code Interface Report","SimpleFOC_interface.html"],["Eliminated Blocks","SimpleFOC_reducedblocks.html"]];
